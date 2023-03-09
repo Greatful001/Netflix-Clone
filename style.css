@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: black;
+  color: white;
+
+}
+
+.netflix-header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 60px;
+}
+
+.logo {
+  width: 240px;
+  cursor: pointer;
+}
+.btn {
+  background: red;
+  padding: 10px 30px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: white;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+}
+.netflix-content {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+ margin-top: 100px;
+}
+
+.netflix-content h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  max-width: 600px;
+ 
+}
+
+.netflix-content p {
+  font-size: 2rem;
+  font-weight: 500;
+  margin:  20px;
+}
+.small {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.netflix-form {
+  background: transparent;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(84, 84, 84, 0.7);
+}
+
+.netflix-form input {
+  flex: 1;
+  background: transparent;
+  color: white;
+  border: 0;
+  outline: none;
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+.netflix-form .btn-1 {
+  background: red;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 12px 30px;
+}
+
+i {
+  padding-left: 5px;
+}
+
+.netflix-grid-col-2 {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-reversed :first-child {
+  order: 2;
+}
+.netflix-grid-col-2 img {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.grid-text {
+  margin: 70px auto;
+  padding: 20px auto;
+  text-align: left;
+}
+
+.grid-text h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.grid-text p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* accordion*/
+
+.accordion {
+  margin: 70px auto;
+  max-width: 700px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.accordion-header {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.accordion-text {
+  width: 100%;
+  padding: 6px;
+}
+.accordion .accordion-text .question {
+    display: flex;
+    align-items: center;
+  background: #464646;
+  font-size: 1.5rem;
+  padding: 15px;
+  margin-bottom: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion .accordion-text .question::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 2.4rem;
+ 
+}
+
+.accordion .accordion-text .answer {
+  background-color: #313131;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  text-align: left;
+  padding: 0  20px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.accordion .accordion-text.active .answer {
+  padding: 20px;
+  height: 200px;
+}
+
+.accordion .accordion-text.active .question {
+  transition: 0.5s;
+}
+
+.accordion .accordion-text.active .question::after
+{
+  content: "X";
+  right: 13px;
+  font-size: 1.6rem;
+}
+
+.accordion .netflix-form {
+  max-width: 600px;
+  margin: 30px auto 40px;
+  
+}
+.accordion .hero{
+  margin: 30px auto;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  width: 80%;
+  height: 300px;
+  margin: 60px auto;
+  cursor: pointer;
+  color: #bfbebe;
+  font-size: 1.4rem;
+}
+
+.footer .grid-col-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+ 
+}
+
+.footer .grid-list {
+  padding: 20px 0;
+ 
+}
+
+.footer .grid-list ul {
+  list-style: none;
+}
+.footer .grid-list ul li {
+  padding-bottom: 10px;
+}
+
+
+
+.hidden {
+    opacity: 0;
+    transition: all 4s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.scroll {
+  animation-delay: 500ms;
+}
+.image-2 {
+  animation-delay: 300ms;
+}
+
+.image-3 {
+  animation-delay: 900ms;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 500px) {
+  .navbar-nav {
+    margin: auto 30px;
+    overflow: hidden;
+  }
+
+  .logo {
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  .netflix-content{
+    position: unset;
+    transform: none;
+    margin-top: 100px;
+  }
+
+  .netflix-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .netflix-content p {
+    font-size: 17px;
+  }
+
+  .small {
+    font-size: 12px;
+  }
+  
+  .netflix-form {
+    margin: 20px ;
+  }
+  .netflix-form input {
+    font-size: 13px;
+  }
+
+  .netflix-form .btn-1 {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .netflix-grid-col-2 {
+    grid-template-columns: 1fr;
+    margin: 40px;
+  }
+
+  .grid-reversed-2 :first-child {
+    order: 1;
+  }
+
+  .grid-text h2 {
+    font-size: 1.8rem;
+  }
+  .grid-text p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+.accordion {
+    width: 90%;
+}
+
+  .accordion-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .accordion .accordion-text .question {
+    font-size: 15px;
+  }
+  .accordion .accordion-text .answer {
+    font-size: 14px;
+  } 
+  
+
+ .accordion .hero{
+   font-size: 14px;
+ }
+ 
+  .footer .grid-col-4 {
+    grid-template-columns: repeat(2, 4fr);
+    grid-column-gap: 1rem;
+    
+  }
+
+  .footer .grid-list ul li {
+    font-size: 14px;
+  }
+}
