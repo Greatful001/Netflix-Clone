@@ -19,7 +19,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 
-const hidden = document.querySelectorAll('.hidden');
-hidden.forEach((el) => observer.observe(el));
+const fade = document.querySelectorAll('.fade-in');
+fade.forEach((el) => observer.observe(el));
 
 
