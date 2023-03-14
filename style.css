@@ -244,7 +244,7 @@ i {
 
 
 
-.hidden {
+.fade-in {
     opacity: 0;
     transition: all 4s;
     filter: blur(5px);
