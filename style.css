@@ -125,12 +125,12 @@ i {
 }
 
 .grid-text h2 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 20px;
 }
 .grid-text p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
 }
 
@@ -288,7 +288,7 @@ i {
   .netflix-content{
     position: unset;
     transform: none;
-    margin-top: 100px;
+    padding-top: 100px;
   }
 
   .netflix-content h2 {
