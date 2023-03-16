@@ -246,7 +246,7 @@ i {
 
 .fade-in {
     opacity: 0;
-    transition: all 4s;
+    transition: all 2s;
     filter: blur(5px);
     transform: translateX(-100%);
 }
